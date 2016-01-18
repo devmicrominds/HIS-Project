@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBB14791-589C-40AD-9893-ECDD7199818E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Data.Mapping</RootNamespace>
+    <AssemblyName>HIS.Data.Mapping</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.1001\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockMap.cs" />
+    <Compile Include="BlockImageMap.cs" />
+    <Compile Include="CampaignsMap.cs" />
+    <Compile Include="ChannelMap.cs" />
+    <Compile Include="DocumentExtensionLinkMap.cs" />
+    <Compile Include="DocumentExtensionMap.cs" />
+    <Compile Include="FontSizeMap.cs" />
+    <Compile Include="FontsMap.cs" />
+    <Compile Include="GroupsMap.cs" />
+    <Compile Include="MediaCategoryMap.cs" />
+    <Compile Include="PlayerMap.cs" />
+    <Compile Include="PlayerSettingsMap.cs" />
+    <Compile Include="PrivilegesMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceHTMLMap.cs" />
+    <Compile Include="ResourceImageMap.cs" />
+    <Compile Include="ResourceMap.cs" />
+    <Compile Include="ResourceMusicMap.cs" />
+    <Compile Include="ResourceStreamMap.cs" />
+    <Compile Include="ResourceVideoMap.cs" />
+    <Compile Include="RolesMap.cs" />
+    <Compile Include="ScheduleEventMap.cs" />
+    <Compile Include="ScheduleMap.cs" />
+    <Compile Include="ScreenDivisionMap.cs" />
+    <Compile Include="ScreenOrientationMap.cs" />
+    <Compile Include="ScreenResolutionMap.cs" />
+    <Compile Include="ScreenTemplateMap.cs" />
+    <Compile Include="ScreenTypeMap.cs" />
+    <Compile Include="ResourceFontPropertiesMap.cs" />
+    <Compile Include="TickerMap.cs" />
+    <Compile Include="ResourceTitleMap.cs" />
+    <Compile Include="TimelineMap.cs" />
+    <Compile Include="UsersMap.cs" />
+    <Compile Include="Utils\PathLocatorResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Data\HIS.Data.csproj">
+      <Project>{e6d99925-44fe-462e-a1ad-df9b6e8af693}</Project>
+      <Name>HIS.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\HIS.Data.Mapping.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\HIS.Data.Mapping.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\HIS.Data.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\Iesi.Collections.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\NHibernate.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\HIS.Data.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\Iesi.Collections.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\bin\Release\NHibernate.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\obj\Release\HIS.Data.Mapping.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\obj\Release\HIS.Data.Mapping.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data.Mapping\obj\Release\HIS.Data.Mapping.pdb
