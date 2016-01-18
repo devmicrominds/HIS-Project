@@ -1,0 +1,96 @@
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Configuration\nhibernate.config
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe.config
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Autofac.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\System.Json.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\NHibernate.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Autofac.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\System.Json.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\NHibernate.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.exe
+C:\Users\User\Documents\anih_tcss\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Configuration\nhibernate.config
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe.config
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Autofac.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\System.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\NHibernate.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Autofac.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\System.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\NHibernate.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.exe
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Configuration\nhibernate.config
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe.config
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Autofac.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\System.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\NHibernate.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Autofac.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\System.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\NHibernate.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.exe
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Configuration\nhibernate.config
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe.config
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.exe
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.CommandConsole.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Autofac.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\System.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\NHibernate.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.Mapping.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Autofac.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\System.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\NHibernate.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\bin\Debug\Iesi.Collections.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.exe
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.CommandConsole\obj\Debug\HIS.CommandConsole.pdb
