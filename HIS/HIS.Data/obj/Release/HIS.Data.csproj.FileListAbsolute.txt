@@ -1,0 +1,4 @@
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\bin\Release\HIS.Data.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\bin\Release\HIS.Data.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\obj\Release\HIS.Data.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\obj\Release\HIS.Data.pdb

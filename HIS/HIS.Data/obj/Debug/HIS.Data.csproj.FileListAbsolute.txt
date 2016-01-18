@@ -1,0 +1,20 @@
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\bin\Debug\HIS.Data.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\bin\Debug\HIS.Data.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\obj\Debug\HIS.Data.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\obj\Debug\HIS.Data.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.Data\obj\Debug\HIS.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.Data\bin\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.Data\bin\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.Data\obj\Debug\HIS.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.Data\obj\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.Data\obj\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.Data\bin\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.Data\bin\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.Data\obj\Debug\HIS.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.Data\obj\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.Data\obj\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.Data\bin\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.Data\bin\Debug\HIS.Data.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.Data\obj\Debug\HIS.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.Data\obj\Debug\HIS.Data.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.Data\obj\Debug\HIS.Data.pdb

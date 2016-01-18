@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6D99925-44FE-462E-A1AD-DF9B6E8AF693}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Data</RootNamespace>
+    <AssemblyName>HIS.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDomain.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="BlockImage.cs" />
+    <Compile Include="Campaigns.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="DocumentExtension.cs" />
+    <Compile Include="DocumentExtensionLink.cs" />
+    <Compile Include="Fonts.cs" />
+    <Compile Include="FontSize.cs" />
+    <Compile Include="IPathLocatorResolver.cs" />
+    <Compile Include="MediaCategory.cs" />
+    <Compile Include="ResourceHTML.cs" />
+    <Compile Include="ResourceImage.cs" />
+    <Compile Include="ResourceMusic.cs" />
+    <Compile Include="ResourceStream.cs" />
+    <Compile Include="ResourceVideo.cs" />
+    <Compile Include="Ticker.cs" />
+    <Compile Include="ResourceFontProperties.cs" />
+    <Compile Include="ResourceTitle.cs" />
+    <Compile Include="__Enumerations.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="PlayerSettings.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="ScheduleEvent.cs" />
+    <Compile Include="ScreenDivision.cs" />
+    <Compile Include="ScreenOrientation.cs" />
+    <Compile Include="ScreenResolution.cs" />
+    <Compile Include="ScreenTemplate.cs" />
+    <Compile Include="ScreenType.cs" />
+    <Compile Include="Timeline.cs" />
+    <Compile Include="___%40%40\HashtableDynamicObject.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="___%40%40\Interfaces\IContainerParameter.cs" />
+    <Compile Include="___%40%40\Interfaces\IParameterList.cs" />
+    <Compile Include="Privileges.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="RolesPrivileges.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersRoles.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
