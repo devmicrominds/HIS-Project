@@ -1,0 +1,12 @@
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\HIS.DataAccess.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\HIS.DataAccess.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\Iesi.Collections.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\NHibernate.Caches.SysCache.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\NHibernate.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\Iesi.Collections.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Release\NHibernate.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\obj\Release\HIS.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\obj\Release\HIS.DataAccess.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\obj\Release\HIS.DataAccess.pdb

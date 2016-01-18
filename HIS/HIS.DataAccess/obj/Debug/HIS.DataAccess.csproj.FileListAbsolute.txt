@@ -1,0 +1,47 @@
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.pdb
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\NHibernate.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\bin\Debug\NHibernate.xml
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.dll
+C:\Users\User\Documents\anih_tcss\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\NHibernate.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\bin\Debug\NHibernate.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\New folder\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\NHibernate.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\bin\Debug\NHibernate.xml
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2012\Projects\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\HIS.DataAccess.pdb
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\NHibernate.Caches.SysCache.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\NHibernate.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\Iesi.Collections.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\bin\Debug\NHibernate.xml
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.dll
+C:\Users\Hamdani\Documents\Visual Studio 2013\Projects\HIS\HIS.DataAccess\obj\Debug\HIS.DataAccess.pdb
