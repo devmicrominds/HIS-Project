@@ -1,0 +1,390 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="Base.master.cs" Inherits="HIS.Web.UI.Site.Base" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Light Blue - Admin Template</title>
+    <link href="<%= Page.ResolveUrl("~/Contents/css/application.css") %>" rel="stylesheet">
+    <link href="<%= Page.ResolveUrl("~/Contents/css/bootstrap-editable.css") %>" rel="stylesheet">
+    <link href="<%= Page.ResolveUrl("~/Contents/css/jquery.mcustomscrollbar.css") %>" rel="stylesheet">
+    <link href="<%= Page.ResolveUrl("~/Contents/css/ion.rangeSlider.css") %>" rel="stylesheet" />
+    <link href="<%= Page.ResolveUrl("~/Contents/css/ion.rangeSlider.skinNice.css") %>" rel="stylesheet" />
+    <link href="<%= Page.ResolveUrl("~/Contents/css/lightGallery.css") %>" rel="stylesheet" />
+    <link href="<%= Page.ResolveUrl("~/Contents/lib/switchery.css") %>" rel="stylesheet" />
+    <link href="<%= Page.ResolveUrl("~/Contents/css/jquery.horizontal.scroll.css") %>" rel="stylesheet">
+
+    <link href="<%= Page.ResolveUrl("~/Contents/lib/colpick.css") %>" rel="stylesheet" />
+
+    <link href="<%= Page.ResolveUrl("~/Contents/musicPlayer02/css/miniplayer.css") %>" rel="stylesheet" type="text/css" title="style" media="screen" />
+
+
+
+
+    <link href="<%= Page.ResolveUrl("~/Contents/mediaElement/mediaelementplayer.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= Page.ResolveUrl("~/Contents/videojs/video-js.css") %>" rel="stylesheet" type="text/css" />
+
+
+
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/jquery/jquery-2.1.1.min.js") %>"> </script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/transition.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/collapse.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/alert.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/tooltip.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/popover.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/button.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/tab.js") %>"> </script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/dropdown.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap/modal.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/bootstrap-select/bootstrap-select.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/multicolumnselect/jquery.multicolumnselect.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/jquery-pjax/jquery.pjax.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/jquery.editabletable.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/dropzone.min.js") %>"></script>
+
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/jquery-ui-1.10.3.custom.js") %>"></script>
+
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/form-validator/jquery.form-validator.min.js") %>"></script>
+    <script type="text/javascript" src="/Contents/lib/ion.rangeSlider-1.9.3/ion.rangeSlider.min.js"></script>
+
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/backbone/underscore-min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/backbone/backbone-min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/backbone/backbone-controller.js") %>"></script>
+    <script type="text/javascript" src="/Contents/lib/backbone/backbone.epoxy.min.js"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/lightGallery.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/momentjs/moment.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/amplify/amplify.min.js") %>"></script>
+
+    <%--<script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/fullcalendar/fullcalendar.min.js") %>"></script>--%>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/js/app.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/js/settings.js") %>"></script>
+
+
+    <%-- CAMPAIGNS--%>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/js/campaigns/elements.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/switchery.js") %>"></script>
+
+
+    <%--add by azrul--%>
+    <%--color picker--%>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/lib/colpick.js") %>"></script>
+    <%--SimpleAudio in test foleder--%>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer04/audio.min.js") %>"></script>
+
+    <%--    music folder 01 j player x
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer/js/jquery.transform2d.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer/js/jquery.grab.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer/js/jquery.jplayer.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer/js/mod.csstransforms.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer/js/circle.player.js") %>"></script> --%>
+
+    <%--miniAudioPlayer--%>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer02/inc/jquery.jplayer.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer02/inc/jquery.mb.miniPlayer.js") %>"></script>
+
+    <%--test 1 example in test folder to bind in body
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer03/plugin/jquery-jplayer/jquery.jplayer.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer03/plugin/ttw-music-player-min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/musicPlayer03/js/myplaylist.js") %>"></script>--%>
+
+    <%--   video template not use yet
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/mediaElement/mediaelement-and-player.min.js") %>"></script>--%>
+    <%--end add by azrul--%>
+
+
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Contents/videojs/video.js") %>"></script>
+
+    <nav id="sidebar" class="sidebar nav-collapse collapse">
+        <ul id="side-nav" class="side-nav">
+            <li class="active">
+                <a href="/Site/Home.aspx"><i class="fa fa-home"></i><span class="name">Home</span></a>
+            </li>
+            <asp:Repeater runat="server" ID="rptrMenu" DataSourceID="SiteMapDS" EnableViewState="False" ItemType="System.Web.SiteMapNode">
+                <ItemTemplate>
+                    <li class="panel">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#<%#Item.Title%>-collapse">
+                            <i class="fa fa-<%# Item.Description %>"></i><span class="name"><%# Item.Title %></span></a>
+                        <ul id="<%# Item.Title %>-collapse" class="panel-collapse collapse">
+                            <asp:Repeater ID="rptrSubMenu" runat="server" DataSource="<%# Item.ChildNodes %>" ItemType="System.Web.SiteMapNode">
+                                <ItemTemplate>
+                                    <li>
+                                        <a href="<%# Item.Url %>">
+                                            <span><%# Item.Title  %></span>
+                                        </a>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                    </li>
+                </ItemTemplate>
+            </asp:Repeater>
+            <li class="visible-xs">
+                <a href="login.html"><i class="fa fa-sign-out"></i><span class="name">Sign Out</span></a>
+            </li>
+        </ul>
+        <asp:SiteMapDataSource ID="SiteMapDS" runat="server" ShowStartingNode="false" />
+        <div id="sidebar-settings" class="settings">
+            <button type="button" data-value="icons" class="btn-icons btn btn-inverse btn-sm">Icons</button>
+            <button type="button" data-value="auto" class="btn-auto btn btn-inverse btn-sm">Auto</button>
+        </div>
+    </nav>
+    <header class="page-header">
+        <div class="navbar">
+            <ul class="nav navbar-nav navbar-right pull-right">
+                <li class="visible-phone-landscape">
+                    <a href="#" id="search-toggle">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Messages" id="messages"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown">
+                        <i class="fa fa-comments"></i>
+                    </a>
+                    <ul id="messages-menu" class="dropdown-menu messages" role="menu">
+                        <li role="presentation">
+                            <a href="#" class="message">
+                                <%--<img src="img/1.jpg" alt="">--%>
+                                <div class="details">
+                                    <div class="sender">Jane Hew</div>
+                                    <div class="text">
+                                        Hey, John! How is it going? ...
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="message">
+                                <%--<img src="img/2.jpg" alt="">--%>
+                                <div class="details">
+                                    <div class="sender">Alies Rumiancaŭ</div>
+                                    <div class="text">
+                                        I'll definitely buy this template
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="message">
+                                <%--<img src="img/3.jpg" alt="">--%>
+                                <div class="details">
+                                    <div class="sender">Michał Rumiancaŭ</div>
+                                    <div class="text">
+                                        Is it really Lore ipsum? Lore ...
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="text-align-center see-all">See all messages <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="8 support tickets"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown">
+                        <i class="fa fa-group"></i>
+                        <span class="count">8</span>
+                    </a>
+                    <ul id="support-menu" class="dropdown-menu support" role="menu">
+                        <li role="presentation">
+                            <a href="#" class="support-ticket">
+                                <div class="picture">
+                                    <span class="label label-important"><i class="fa fa-bell-o"></i></span>
+                                </div>
+                                <div class="details">
+                                    Check out this awesome ticket
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="support-ticket">
+                                <div class="picture">
+                                    <span class="label label-warning"><i class="fa fa-question-circle"></i></span>
+                                </div>
+                                <div class="details">
+                                    "What is the best way to get ...
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="support-ticket">
+                                <div class="picture">
+                                    <span class="label label-success"><i class="fa fa-tag"></i></span>
+                                </div>
+                                <div class="details">
+                                    This is just a simple notification
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="support-ticket">
+                                <div class="picture">
+                                    <span class="label label-info"><i class="fa fa-info-circle"></i></span>
+                                </div>
+                                <div class="details">
+                                    12 new orders has arrived today
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="support-ticket">
+                                <div class="picture">
+                                    <span class="label label-important"><i class="fa fa-plus"></i></span>
+                                </div>
+                                <div class="details">
+                                    One more thing that just happened
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="text-align-center see-all">See all tickets <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+                <li class="hidden-xs">
+                    <a href="#" id="settings"
+                        title="Settings"
+                        data-toggle="popover"
+                        data-placement="bottom">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </li>
+                <li class="hidden-xs dropdown">
+                    <a href="#" title="Account" id="account"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul id="account-menu" class="dropdown-menu account" role="menu">
+                        <li role="presentation" class="account-picture">
+                            <%--<img src="img/2.jpg" alt="">--%>
+                                Philip Daineka
+                        </li>
+                        <li role="presentation">
+                            <a href="form_account.html" class="link">
+                                <i class="fa fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="component_calendar.html" class="link">
+                                <i class="fa fa-calendar"></i>
+                                Calendar
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" class="link">
+                                <i class="fa fa-inbox"></i>
+                                Inbox
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="visible-xs">
+                    <a href="#"
+                        class="btn-navbar"
+                        data-toggle="collapse"
+                        data-target=".sidebar"
+                        title="">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="hidden-xs"><a href="login.html"><i class="fa fa-sign-out"></i></a></li>
+            </ul>
+            <%-- <form id="search-form" class="navbar-form pull-right" role="search">
+                    <input type="search" class="search-query" placeholder="Search...">
+                </form>--%>
+            <div class="notifications pull-right">
+                <div class="alert pull-right">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <i class="fa fa-info-circle"></i>Check out Light Blue <a id="notification-link" href="#">settings</a> on the right!
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="__scriptmanager" runat="server" LoadScriptsBeforeUI="false" EnablePartialRendering="true" />
+        <div class="wrap">
+            <div class="content container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="loader-wrap hiding hide">
+                <i class="fa fa-spinner fa-spin"></i>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+       
+    </script>
+
+    <script type="text/template" id="settings-template">
+        <div class="setting clearfix">
+            <div>Background</div>
+            <div id="background-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+                <@ dark = background == 'dark'; light = background == 'light';@>
+            <button type="button" data-value="dark" class="btn btn-sm btn-inverse <@= dark? 'active' : '' @>">Dark</button>
+                <button type="button" data-value="light" class="btn btn-sm btn-inverse <@= light? 'active' : '' @>">Light</button>
+            </div>
+        </div>
+        <div class="setting clearfix">
+            <div>Sidebar on the</div>
+            <div id="sidebar-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+                <@ onRight = sidebar == 'right'@>
+            <button type="button" data-value="left" class="btn btn-sm btn-inverse <@= onRight? '' : 'active' @>">Left</button>
+                <button type="button" data-value="right" class="btn btn-sm btn-inverse <@= onRight? 'active' : '' @>">Right</button>
+            </div>
+        </div>
+        <div class="setting clearfix">
+            <div>Sidebar</div>
+            <div id="display-sidebar-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+                <@ display = displaySidebar@>
+            <button type="button" data-value="true" class="btn btn-sm btn-inverse <@= display? 'active' : '' @>">Show</button>
+                <button type="button" data-value="false" class="btn btn-sm btn-inverse <@= display? '' : 'active' @>">Hide</button>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="sidebar-settings-template">
+        <@ auto = sidebarState == 'auto'@>
+    <@ if (auto) { @> 
+    <button type="button"
+        data-value="icons"
+        class="btn-icons btn btn-inverse btn-sm">
+        Icons</button>
+        <button type="button"
+            data-value="auto"
+            class="btn-auto btn btn-inverse btn-sm">
+            Auto</button>
+        <@ } else { @>
+    <button type="button"
+        data-value="auto"
+        class="btn btn-inverse btn-sm">
+        Auto</button>
+        <@ } @>
+    </script>
+
+
+
+</body>
+</html>
+
+

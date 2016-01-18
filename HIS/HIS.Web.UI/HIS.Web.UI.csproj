@@ -1,0 +1,1312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF5B205C-D415-4C10-BE93-E6697DD950A5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Web.UI</RootNamespace>
+    <AssemblyName>HIS.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.3.1\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration">
+      <HintPath>..\packages\Autofac.Configuration.3.2.1\lib\net40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Web">
+      <HintPath>..\packages\Autofac.Web.3.1.1\lib\net40\Autofac.Integration.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi, Version=3.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.WebApi2.3.2.1\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Iesi.Collections.3.2.0.1001\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Json">
+      <HintPath>..\packages\System.Json.4.0.20126.16343\lib\net40\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Http.WebHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\acornmediaplayer\acornmediaplayer.base.css" />
+    <Content Include="Contents\acornmediaplayer\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Contents\acornmediaplayer\jquery.acornmediaplayer.js" />
+    <Content Include="Contents\acornmediaplayer\modernizr.custom.js" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-captions-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-captions.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-exit-fullscreen-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-exit-fullscreen.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-fullscreen-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-fullscreen.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-pause-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-pause.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-play-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-play.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-transcript-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-transcript.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-volume-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-volume-full-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-volume-full.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\access-volume.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\acorn.access.css" />
+    <Content Include="Contents\acornmediaplayer\themes\access\button-background-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\button-background-light.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\controls-background-dark.png" />
+    <Content Include="Contents\acornmediaplayer\themes\access\controls-background-light.png" />
+    <Content Include="Contents\acornmediaplayer\themes\barebones\acorn.barebones.css" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\acorn.darkglass.css" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-caption.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-exit-fullscreen.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-fullscreen.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-pause.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-play.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-transcript.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-volume-full.png" />
+    <Content Include="Contents\acornmediaplayer\themes\darkglass\darkglass-volume.png" />
+    <Content Include="Contents\css\alpaca-bootstrap.css" />
+    <Content Include="Contents\css\alpaca.css" />
+    <Content Include="Contents\css\alpaca.min.css" />
+    <Content Include="Contents\css\application.css" />
+    <Content Include="Contents\css\application.min.css" />
+    <Content Include="Contents\css\fontello\css\fontello.css" />
+    <Content Include="Contents\css\fontello\font\fontello8314.svg" />
+    <Content Include="Contents\css\fonts\font-awesome\fontawesome-webfontba72.svg" />
+    <Content Include="Contents\css\fonts\glyphicons\glyphicons-halflings-regular.svg" />
+    <Content Include="Contents\css\images\alpaca-icons.png" />
+    <Content Include="Contents\css\images\date.png" />
+    <Content Include="Contents\css\images\down.png" />
+    <Content Include="Contents\css\images\email.png" />
+    <Content Include="Contents\css\images\left.png" />
+    <Content Include="Contents\css\images\phone.png" />
+    <Content Include="Contents\css\images\time.png" />
+    <Content Include="Contents\css\jquery.dynatable.css" />
+    <Content Include="Contents\css\jquery.horizontal.scroll.css" />
+    <Content Include="Contents\css\jquery.mcustomscrollbar.css" />
+    <Content Include="Contents\css\lightGallery.css" />
+    <Content Include="Contents\css\select2.png" />
+    <Content Include="Contents\css\select2x2.png" />
+    <Content Include="Contents\img\1.jpg" />
+    <Content Include="Contents\img\10.jpg" />
+    <Content Include="Contents\img\11.jpg" />
+    <Content Include="Contents\img\12.jpg" />
+    <Content Include="Contents\img\13.jpg" />
+    <Content Include="Contents\img\14.jpg" />
+    <Content Include="Contents\img\15.jpg" />
+    <Content Include="Contents\img\2.jpg" />
+    <Content Include="Contents\img\3.jpg" />
+    <Content Include="Contents\img\5.jpg" />
+    <Content Include="Contents\img\6.jpg" />
+    <Content Include="Contents\img\7.jpg" />
+    <Content Include="Contents\img\8.jpg" />
+    <Content Include="Contents\img\9.jpg" />
+    <Content Include="Contents\img\alpha.png" />
+    <Content Include="Contents\img\bgnoise_lg_dark.png" />
+    <Content Include="Contents\img\datatables\sort_asc.png" />
+    <Content Include="Contents\img\datatables\sort_asc_disabled.png" />
+    <Content Include="Contents\img\datatables\sort_both.png" />
+    <Content Include="Contents\img\datatables\sort_desc.png" />
+    <Content Include="Contents\img\datatables\sort_desc_disabled.png" />
+    <Content Include="Contents\img\favicon.png" />
+    <Content Include="Contents\img\html5.png" />
+    <Content Include="Contents\img\hue.png" />
+    <Content Include="Contents\img\icheck\square\grey%402x.png" />
+    <Content Include="Contents\img\icheck\square\grey.png" />
+    <Content Include="Contents\img\jpeg\1.jpg" />
+    <Content Include="Contents\img\jpeg\11.jpg" />
+    <Content Include="Contents\img\jpeg\2.jpg" />
+    <Content Include="Contents\img\jpeg\3.jpg" />
+    <Content Include="Contents\img\jpeg\4.jpg" />
+    <Content Include="Contents\img\logo.png" />
+    <Content Include="Contents\img\orientationH.png" />
+    <Content Include="Contents\img\orientationV.png" />
+    <Content Include="Contents\img\saturation2.png" />
+    <Content Include="Contents\img\search.png" />
+    <Content Include="Contents\img\spritemap%402x.png" />
+    <Content Include="Contents\img\spritemap.png" />
+    <Content Include="Contents\js\app.js" />
+    <Content Include="Contents\js\calendar.js" />
+    <Content Include="Contents\js\chat.js" />
+    <Content Include="Contents\js\campaigns\elements.js" />
+    <Content Include="Contents\js\fileupload.js" />
+    <Content Include="Contents\js\forms-article.js" />
+    <Content Include="Contents\js\forms-elemets.js" />
+    <Content Include="Contents\js\forms-validation.js" />
+    <Content Include="Contents\js\forms.js" />
+    <Content Include="Contents\js\grid-live.js" />
+    <Content Include="Contents\js\inbox.js" />
+    <Content Include="Contents\js\index.js" />
+    <Content Include="Contents\js\list-groups.js" />
+    <Content Include="Contents\js\maps.js" />
+    <Content Include="Contents\js\print.js" />
+    <Content Include="Contents\js\realtime.js" />
+    <Content Include="Contents\js\campaigns\views\screenlayoutselector.js" />
+    <Content Include="Contents\js\screentemplate.js" />
+    <Content Include="Contents\js\campaigns\controllers\screentemplatefactory.js" />
+    <Content Include="Contents\js\settings.js" />
+    <Content Include="Contents\js\stats.js" />
+    <Content Include="Contents\js\tables-dynamic.js" />
+    <Content Include="Contents\js\ui-buttons.js" />
+    <Content Include="Contents\js\ui-dialogs.js" />
+    <Content Include="Contents\js\ui-notifications.js" />
+    <Content Include="Contents\js\wizard.js" />
+    <Content Include="changelog.txt" />
+    <None Include="Contents\lib\amplify\amplify-vsdoc.js" />
+    <Content Include="Contents\js\campaigns\controllers\combroker.js" />
+    <Content Include="Contents\js\campaigns\controllers\timeline.js" />
+    <Content Include="Contents\lib\alpaca.js" />
+    <Content Include="Contents\lib\alpaca.min.js" />
+    <Content Include="Contents\lib\amplify\amplify.js" />
+    <Content Include="Contents\lib\amplify\amplify.min.js" />
+    <Content Include="Contents\lib\AudioPlayer\amazingaudioplayer.js" />
+    <Content Include="Contents\lib\AudioPlayer\amazingaudioplayer.swf" />
+    <Content Include="Contents\lib\AudioPlayer\initaudioplayer-1.css" />
+    <Content Include="Contents\lib\AudioPlayer\initaudioplayer-1.js" />
+    <Content Include="Contents\lib\AudioPlayer\loop-24-24-0.png" />
+    <Content Include="Contents\lib\AudioPlayer\playpause-24-24-0.png" />
+    <Content Include="Contents\lib\AudioPlayer\prevnext-24-24-0.png" />
+    <Content Include="Contents\lib\AudioPlayer\tracklistarrow-48-16-0.png" />
+    <Content Include="Contents\lib\AudioPlayer\volume-24-24-0.png" />
+    <Content Include="Contents\lib\backbone\backbone.epoxy.min.js" />
+    <Content Include="Contents\lib\backbone\backbone-controller.js" />
+    <Content Include="Contents\lib\backbone\backbone-min.js" />
+    <Content Include="Contents\lib\backbone\backbone-pageable.js" />
+    <Content Include="Contents\lib\backbone\backbone.localStorage-min.js" />
+    <Content Include="Contents\lib\backbone\underscore-min.js" />
+    <Content Include="Contents\lib\backgrid\backgrid-paginator.js" />
+    <Content Include="Contents\lib\backgrid\backgrid.js" />
+    <Content Include="Contents\lib\bootstrap-colorpicker.js" />
+    <Content Include="Contents\lib\bootstrap-datepicker.js" />
+    <Content Include="Contents\lib\bootstrap-select\bootstrap-select.js" />
+    <Content Include="Contents\lib\bootstrap-slider-3.0.1\bootstrap-slider.min.js" />
+    <Content Include="Contents\lib\bootstrap-switch.js" />
+    <Content Include="Contents\lib\bootstrap-wysihtml5\bootstrap-wysihtml5.js" />
+    <Content Include="Contents\css\bootstrap-editable.css" />
+    <Content Include="Contents\img\clear.png" />
+    <Content Include="Contents\img\loading.gif" />
+    <Content Include="Contents\lib\bootstrap3-editable\js\bootstrap-editable.js" />
+    <Content Include="Contents\lib\bootstrap-editable.min.js" />
+    <Content Include="Contents\lib\bootstrap\alert.js" />
+    <Content Include="Contents\lib\bootstrap\button.js" />
+    <Content Include="Contents\lib\bootstrap\carousel.js" />
+    <Content Include="Contents\lib\bootstrap\collapse.js" />
+    <Content Include="Contents\lib\bootstrap\dropdown.js" />
+    <Content Include="Contents\lib\bootstrap\modal.js" />
+    <Content Include="Contents\lib\bootstrap\popover.js" />
+    <Content Include="Contents\lib\bootstrap\tab.js" />
+    <Content Include="Contents\lib\bootstrap\tooltip.js" />
+    <Content Include="Contents\lib\bootstrap\transition.js" />
+    <Content Include="Contents\lib\colpick.css" />
+    <Content Include="Contents\lib\colpick.js" />
+    <Content Include="Contents\lib\d3.layout.min.js" />
+    <Content Include="Contents\lib\dropzone.min.js" />
+    <Content Include="Contents\lib\form-validator\date.dev.js" />
+    <Content Include="Contents\lib\form-validator\date.js" />
+    <Content Include="Contents\lib\form-validator\file.dev.js" />
+    <Content Include="Contents\lib\form-validator\file.js" />
+    <Content Include="Contents\lib\form-validator\form-test.html" />
+    <Content Include="Contents\lib\form-validator\html5.dev.js" />
+    <Content Include="Contents\lib\form-validator\html5.js" />
+    <Content Include="Contents\lib\form-validator\jquery.form-validator.js" />
+    <Content Include="Contents\lib\form-validator\jquery.form-validator.min.js" />
+    <Content Include="Contents\lib\form-validator\location.dev.js" />
+    <Content Include="Contents\lib\form-validator\location.js" />
+    <Content Include="Contents\lib\form-validator\qunit.html" />
+    <Content Include="Contents\lib\form-validator\security.dev.js" />
+    <Content Include="Contents\lib\form-validator\security.js" />
+    <Content Include="Contents\lib\form-validator\sweden.dev.js" />
+    <Content Include="Contents\lib\form-validator\sweden.js" />
+    <Content Include="Contents\lib\form-validator\uk.dev.js" />
+    <Content Include="Contents\lib\form-validator\uk.js" />
+    <Content Include="Contents\lib\fullcalendar\fullcalendar.js" />
+    <Content Include="Contents\lib\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Contents\lib\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Contents\lib\gmap3.js" />
+    <Content Include="Contents\lib\icheck.js\jquery.icheck.js" />
+    <Content Include="Contents\css\ion.rangeSlider.css" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Contents\css\ion.rangeSlider.skinNice.css" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\css\ion.rangeSlider.skinSimple.css" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\css\normalize.min.css" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\img\sprite-skin-flat.png" />
+    <Content Include="Contents\img\sprite-skin-nice.png" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\img\sprite-skin-simple.png" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\js\ion-rangeSlider\ion.rangeSlider.js" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider.min.js" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\js\vendor\jquery-1.11.0.min.js" />
+    <Content Include="Contents\lib\jquery-maskedinput\jquery.maskedinput.js" />
+    <Content Include="Contents\lib\jquery-pjax\jquery.pjax.js" />
+    <Content Include="Contents\lib\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Contents\lib\jquery.autogrow-textarea.js" />
+    <Content Include="Contents\lib\jquery.bootstrap.wizard.js" />
+    <Content Include="Contents\lib\jquery.dataTables.min.js" />
+    <Content Include="Contents\lib\jquery.editabletable.js" />
+    <Content Include="Contents\lib\jquery.fileupload-fp.js" />
+    <Content Include="Contents\lib\jquery.fileupload-ui.js" />
+    <Content Include="Contents\lib\jquery.fileupload.js" />
+    <Content Include="Contents\lib\jquery.iframe-transport.js" />
+    <Content Include="Contents\lib\jquery.mcustomscrollbar.min.js" />
+    <Content Include="Contents\lib\jquery.nestable.js" />
+    <Content Include="Contents\lib\jquery.slimscroll.min.js" />
+    <Content Include="Contents\lib\jquery.tmpl.js" />
+    <Content Include="Contents\lib\jquery.ui.touch-punch.js" />
+    <Content Include="Contents\lib\jquery.vmap.australia.js" />
+    <Content Include="Contents\lib\jquery.vmap.europe.js" />
+    <Content Include="Contents\lib\jquery.vmap.js" />
+    <Content Include="Contents\lib\jquery.vmap.usa.js" />
+    <Content Include="Contents\lib\jquery.vmap.world.js" />
+    <Content Include="Contents\lib\jquery\CodoPlayer.js" />
+    <Content Include="Contents\lib\jquery\jquery-2.0.3.min.js" />
+    <Content Include="Contents\lib\jquery\jquery-2.1.1.js" />
+    <Content Include="Contents\lib\jquery\jquery-2.1.1.min.js" />
+    <Content Include="Contents\lib\jsonform.js" />
+    <Content Include="Contents\lib\jsv.js" />
+    <Content Include="Contents\lib\knockout.x-editable.min.js" />
+    <Content Include="Contents\lib\lightGallery.min.js" />
+    <Content Include="Contents\lib\messenger-1.4.1\docs\welcome\javascripts\location-sel.js" />
+    <Content Include="Contents\lib\messenger-1.4.1\messenger-theme-flat.js" />
+    <Content Include="Contents\lib\messenger-1.4.1\messenger.js" />
+    <Content Include="Contents\lib\momentjs\moment.js" />
+    <Content Include="Contents\lib\multicolumnselect\Multi-Column-Select.css" />
+    <Content Include="Contents\lib\multicolumnselect\jquery.multicolumnselect.js" />
+    <Content Include="Contents\lib\nvd3\lib\d3.v2.js" />
+    <Content Include="Contents\lib\nvd3\nv.d3.custom.js" />
+    <Content Include="Contents\lib\nvd3\src\models\axis.js" />
+    <Content Include="Contents\lib\nvd3\src\models\legend.js" />
+    <Content Include="Contents\lib\nvd3\src\models\line.js" />
+    <Content Include="Contents\lib\nvd3\src\models\lineChart.js" />
+    <Content Include="Contents\lib\nvd3\src\models\multiBar.js" />
+    <Content Include="Contents\lib\nvd3\src\models\multiBarChart.js" />
+    <Content Include="Contents\lib\nvd3\src\models\pie.js" />
+    <Content Include="Contents\lib\nvd3\src\models\pieChartTotal.js" />
+    <Content Include="Contents\lib\nvd3\src\models\scatter.js" />
+    <Content Include="Contents\lib\nvd3\src\models\stackedArea.js" />
+    <Content Include="Contents\lib\nvd3\src\models\stackedAreaChart.js" />
+    <Content Include="Contents\lib\nvd3\src\nv.d3.css" />
+    <Content Include="Contents\lib\nvd3\stream_layers.js" />
+    <Content Include="Contents\lib\parsley\parsley.js" />
+    <Content Include="Contents\lib\rickshaw\rickshaw-extensions.js" />
+    <Content Include="Contents\lib\rickshaw\rickshaw.js" />
+    <Content Include="Contents\lib\select2.js" />
+    <Content Include="Contents\lib\sparkline\jquery.sparkline.js" />
+    <Content Include="Contents\lib\switchery.css" />
+    <Content Include="Contents\lib\switchery.js" />
+    <Content Include="Contents\lib\vendor\http_blueimp.github.io_JavaScript-Canvas-to-Blob_js_canvas-to-blob.js" />
+    <Content Include="Contents\lib\vendor\http_blueimp.github.io_JavaScript-Load-Image_js_load-image.js" />
+    <Content Include="Contents\lib\vendor\http_blueimp.github.io_JavaScript-Templates_js_tmpl.js" />
+    <Content Include="Contents\lib\vendor\jquery.ui.widget.js" />
+    <Content Include="Contents\lib\video-js.css" />
+    <Content Include="Contents\lib\video.js" />
+    <Content Include="Contents\lib\wysihtml5\advanced.js" />
+    <Content Include="Contents\lib\wysihtml5\wysihtml5-0.3.0_rc2.js" />
+    <Content Include="Contents\mediaElement\background.png" />
+    <Content Include="Contents\mediaElement\bigplay.fw.png" />
+    <Content Include="Contents\mediaElement\bigplay.png" />
+    <Content Include="Contents\mediaElement\bigplay.svg" />
+    <Content Include="Contents\mediaElement\controls-ted.png" />
+    <Content Include="Contents\mediaElement\controls-wmp-bg.png" />
+    <Content Include="Contents\mediaElement\controls-wmp.png" />
+    <Content Include="Contents\mediaElement\controls.fw.png" />
+    <Content Include="Contents\mediaElement\controls.png" />
+    <Content Include="Contents\mediaElement\controls.svg" />
+    <Content Include="Contents\mediaElement\DO NOT CHANGE THESE FILES. USE -src- FOLDER.txt" />
+    <Content Include="Contents\mediaElement\flashmediaelement-cdn.swf" />
+    <Content Include="Contents\mediaElement\flashmediaelement.swf" />
+    <Content Include="Contents\mediaElement\jquery.js" />
+    <Content Include="Contents\mediaElement\loading.gif" />
+    <Content Include="Contents\mediaElement\mediaelement-and-player.js" />
+    <Content Include="Contents\mediaElement\mediaelement-and-player.min.js" />
+    <Content Include="Contents\mediaElement\mediaelement.js" />
+    <Content Include="Contents\mediaElement\mediaelement.min.js" />
+    <Content Include="Contents\mediaElement\mediaelementplayer.css" />
+    <Content Include="Contents\mediaElement\mediaelementplayer.js" />
+    <Content Include="Contents\mediaElement\mediaelementplayer.min.css" />
+    <Content Include="Contents\mediaElement\mediaelementplayer.min.js" />
+    <Content Include="Contents\mediaElement\mejs-skins.css" />
+    <Content Include="Contents\mediaElement\silverlightmediaelement.xap" />
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\demo.html" />
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\DroidSansMono.svg" />
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\Google Android License.txt" />
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\stylesheet.css" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mbaudio_font.svg" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mb_audio_font.svg" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\stylesheet.css" />
+    <Content Include="Contents\musicPlayer02\css\miniplayer.css" />
+    <Content Include="Contents\musicPlayer02\inc\id3\binaryajax.js" />
+    <Content Include="Contents\musicPlayer02\inc\id3\id3.js" />
+    <Content Include="Contents\musicPlayer02\inc\id3\id3.min.js" />
+    <Content Include="Contents\musicPlayer02\inc\img\pause.png" />
+    <Content Include="Contents\musicPlayer02\inc\img\play.png" />
+    <Content Include="Contents\musicPlayer02\inc\img\rewind.png" />
+    <Content Include="Contents\musicPlayer02\inc\img\stop.png" />
+    <Content Include="Contents\musicPlayer02\inc\img\volume.png" />
+    <Content Include="Contents\musicPlayer02\inc\Jplayer.swf" />
+    <Content Include="Contents\musicPlayer02\inc\jquery.jplayer.min.js" />
+    <Content Include="Contents\musicPlayer02\inc\jquery.mb.miniPlayer.js" />
+    <Content Include="Contents\musicPlayer02\inc\miniColors\jquery.minicolors.css" />
+    <Content Include="Contents\musicPlayer02\inc\miniColors\jquery.minicolors.js" />
+    <Content Include="Contents\musicPlayer02\inc\miniColors\jquery.minicolors.png" />
+    <Content Include="Contents\musicPlayer02\licenses\GPL-LICENSE.txt" />
+    <Content Include="Contents\musicPlayer02\licenses\MIT-LICENSE.txt" />
+    <Content Include="Contents\musicPlayer03\css\demo.css" />
+    <Content Include="Contents\musicPlayer03\images\bg.jpg" />
+    <Content Include="Contents\musicPlayer03\images\title.png" />
+    <Content Include="Contents\musicPlayer03\js\jquery-1.6.1.min.js" />
+    <Content Include="Contents\musicPlayer03\js\myplaylist.js" />
+    <Content Include="Contents\musicPlayer03\mix\1.mp3" />
+    <Content Include="Contents\musicPlayer03\mix\1.ogg" />
+    <Content Include="Contents\musicPlayer03\mix\1.png" />
+    <Content Include="Contents\musicPlayer03\plugin\css\style.css" />
+    <Content Include="Contents\musicPlayer03\plugin\images\album-cover-bg.jpg" />
+    <Content Include="Contents\musicPlayer03\plugin\images\album-cover-highlight.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\buy-bg.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\description-more.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-bg.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-elapsed.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-next-hover.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-next.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-pause-hover.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-pause.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-play-hover.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-play.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-previous-hover.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-previous.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\player-progress.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\rating-bar-on.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\rating-bar.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\rating-off.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\rating-on.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\tracklist-bg.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\tracklist-item-bg.png" />
+    <Content Include="Contents\musicPlayer03\plugin\images\tracklist-more.png" />
+    <Content Include="Contents\musicPlayer03\plugin\Instructions.txt" />
+    <Content Include="Contents\musicPlayer03\plugin\jquery-jplayer\Jplayer.swf" />
+    <Content Include="Contents\musicPlayer03\plugin\jquery-jplayer\jquery.jplayer.js" />
+    <Content Include="Contents\musicPlayer03\plugin\ttw-music-player-min.js" />
+    <Content Include="Contents\musicPlayer03\plugin\ttw-music-player.js" />
+    <Content Include="Contents\musicPlayer04\audio.min.js" />
+    <Content Include="Contents\musicPlayer04\audiojs.swf" />
+    <Content Include="Contents\musicPlayer04\player-graphics.gif" />
+    <Content Include="Contents\musicPlayer\circle.skin\bgr.jpg" />
+    <Content Include="Contents\musicPlayer\circle.skin\buffer.png" />
+    <Content Include="Contents\musicPlayer\circle.skin\circle.player.css" />
+    <Content Include="Contents\musicPlayer\circle.skin\controls.jpg" />
+    <Content Include="Contents\musicPlayer\circle.skin\progress.png" />
+    <Content Include="Contents\musicPlayer\circle.skin\progress_sprite.jpg" />
+    <Content Include="Contents\musicPlayer\css\not.the.skin.css" />
+    <Content Include="Contents\musicPlayer\js\circle.player.js" />
+    <Content Include="Contents\musicPlayer\js\Jplayer.swf" />
+    <Content Include="Contents\musicPlayer\js\jquery.grab.js" />
+    <Content Include="Contents\musicPlayer\js\jquery.jplayer.js" />
+    <Content Include="Contents\musicPlayer\js\jquery.transform2d.js" />
+    <Content Include="Contents\musicPlayer\js\mod.csstransforms.min.js" />
+    <Content Include="Contents\musicPlayer\screencaps\circleplayer.png" />
+    <Content Include="Contents\mycssTest\jDialog.css" />
+    <Content Include="Contents\videojs\font\vjs.svg" />
+    <Content Include="Contents\videojs\lang\de.js" />
+    <Content Include="Contents\videojs\lang\es.js" />
+    <Content Include="Contents\videojs\lang\fr.js" />
+    <Content Include="Contents\videojs\lang\it.js" />
+    <Content Include="Contents\videojs\lang\ja.js" />
+    <Content Include="Contents\videojs\lang\ko.js" />
+    <Content Include="Contents\videojs\lang\nl.js" />
+    <Content Include="Contents\videojs\lang\pt-BR.js" />
+    <Content Include="Contents\videojs\lang\ru.js" />
+    <Content Include="Contents\videojs\lang\uk.js" />
+    <Content Include="Contents\videojs\lang\zh.js" />
+    <Content Include="Contents\videojs\video-js.css" />
+    <Content Include="Contents\videojs\video-js.min.css" />
+    <Content Include="Contents\videojs\video-js.swf" />
+    <Content Include="Contents\videojs\video.dev.js" />
+    <Content Include="Contents\videojs\video.js" />
+    <Content Include="Global.asax" />
+    <Content Include="App\web.config" />
+    <Content Include="Configuration\nhibernate.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contents\css\fontello\font\fontello8314.eot" />
+    <Content Include="Contents\css\fontello\font\fontello8314.ttf" />
+    <Content Include="Contents\css\fontello\font\fontello8314.woff" />
+    <Content Include="Contents\css\fonts\font-awesome\fontawesome-webfontba72.eot" />
+    <Content Include="Contents\css\fonts\font-awesome\fontawesome-webfontba72.ttf" />
+    <Content Include="Contents\css\fonts\font-awesome\fontawesome-webfontba72.woff" />
+    <Content Include="Contents\css\fonts\font-awesome\fontawesome-webfontd41d.eot" />
+    <Content Include="Contents\css\fonts\glyphicons\glyphicons-halflings-regular.eot" />
+    <Content Include="Contents\css\fonts\glyphicons\glyphicons-halflings-regular.ttf" />
+    <Content Include="Contents\css\fonts\glyphicons\glyphicons-halflings-regular.woff" />
+    <Content Include="Contents\css\fonts\glyphicons\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Contents\css\font\open-sans-bold.woff" />
+    <Content Include="Contents\css\font\open-sans-italic-light.woff" />
+    <Content Include="Contents\css\font\open-sans-italic.woff" />
+    <Content Include="Contents\css\font\open-sans-light.woff" />
+    <Content Include="Contents\css\font\open-sans-semibold.woff" />
+    <Content Include="Contents\css\font\open-sans.woff" />
+    <Content Include="Contents\css\font\web.config" />
+    <Content Include="Contents\css\fontello\web.config" />
+    <Content Include="Contents\css\fontello\css\web.config" />
+    <Content Include="Contents\css\fontello\font\web.config" />
+    <Content Include="Contents\css\fonts\web.config" />
+    <Content Include="Contents\img\web.config" />
+    <Content Include="Contents\img\jpeg\web.config" />
+    <Content Include="Contents\img\icheck\web.config" />
+    <Content Include="Contents\img\icheck\square\web.config" />
+    <Content Include="Contents\img\datatables\web.config" />
+    <Content Include="Contents\js\web.config" />
+    <Content Include="Contents\lib\web.config" />
+    <Content Include="Contents\lib\backbone\web.config" />
+    <Content Include="Contents\lib\backgrid\web.config" />
+    <Content Include="Contents\lib\bootstrap\web.config" />
+    <Content Include="Contents\lib\bootstrap-select\web.config" />
+    <Content Include="Contents\lib\bootstrap-slider-3.0.1\web.config" />
+    <Content Include="Contents\lib\bootstrap-wysihtml5\web.config" />
+    <Content Include="Contents\lib\fullcalendar\web.config" />
+    <Content Include="Contents\lib\icheck.js\web.config" />
+    <Content Include="Contents\lib\jquery\web.config" />
+    <Content Include="Contents\lib\jquery-maskedinput\web.config" />
+    <Content Include="Contents\lib\jquery-pjax\web.config" />
+    <Content Include="Contents\lib\messenger-1.4.1\web.config" />
+    <Content Include="Contents\lib\messenger-1.4.1\docs\web.config" />
+    <Content Include="Contents\lib\messenger-1.4.1\docs\welcome\javascripts\web.config" />
+    <Content Include="Contents\lib\nvd3\lib\web.config" />
+    <Content Include="Contents\lib\nvd3\src\models\web.config" />
+    <Content Include="Contents\lib\nvd3\src\web.config" />
+    <Content Include="Contents\lib\parsley\web.config" />
+    <Content Include="Contents\lib\rickshaw\web.config" />
+    <Content Include="Contents\lib\sparkline\web.config" />
+    <Content Include="Contents\lib\vendor\web.config" />
+    <Content Include="Contents\lib\wysihtml5\web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Contents\css\web.config" />
+    <Content Include="Contents\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Infrastructure\Web\Controls\Editable\EditableText.ascx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Infrastructure\Web\Controls\Pager.ascx" />
+    <Content Include="Contents\musicPlayerCodo\CodoPlayer.js" />
+    <Content Include="readme.txt" />
+    <Content Include="Contents\lib\knockout\knockout-3.1.0.js" />
+    <Content Include="Site\Administration\Accounts.aspx" />
+    <Content Include="Site\Administration\Controls\Accounts_AddEdit.ascx" />
+    <Content Include="Site\Administration\Controls\Accounts_ManageRoles.ascx" />
+    <Content Include="Site\Administration\Controls\Accounts_Privileges.ascx" />
+    <Content Include="Site\Administration\Controls\Accounts_Roles.ascx" />
+    <Content Include="Site\Administration\Controls\Accounts_Users.ascx" />
+    <Content Include="Site\Administration\Profile.aspx" />
+    <Content Include="Site\Home.aspx" />
+    <Content Include="Site\Media\Campaigns.aspx" />
+    <Content Include="Site\Media\Controls\Campaigns_Editor.ascx" />
+    <Content Include="Site\Media\Controls\Campaigns_Layout_Selector.ascx" />
+    <Content Include="Site\Media\Controls\Campaigns_List.ascx" />
+    <Content Include="Site\Media\Controls\Campaigns_Media_Selector.ascx" />
+    <Content Include="Site\Media\Controls\Campaigns_Media_Selector_Alt.ascx" />
+    <Content Include="Site\Media\Controls\Resources_FileUpload.ascx" />
+    <Content Include="Site\Media\Controls\Resources_HTML5.ascx" />
+    <Content Include="Site\Media\Controls\Resources_HTML_AddEdit.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Image.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Media_Gallery.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Menu.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Menu_Search.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Music.ascx" />
+    <Content Include="Site\Media\Controls\Resources_RSS.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Search_Gallery.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Stream.ascx" />
+    <Content Include="Site\Media\Controls\Resources_Video.ascx" />
+    <Content Include="Site\Media\Controls\Resource_CCTV.ascx" />
+    <Content Include="Site\Media\Controls\Resource_Ticker.ascx" />
+    <Content Include="Site\Media\Resources.aspx" />
+    <Content Include="Site\Reporting\Activity_Logs.aspx" />
+    <Content Include="Site\Terminal\Controls\Groups_List.ascx" />
+    <Content Include="Site\Terminal\Controls\Groups_Schedule.ascx" />
+    <Content Include="Site\Terminal\Controls\Group_Manage.ascx" />
+    <Content Include="Site\Terminal\Controls\PlayerEdit.ascx" />
+    <Content Include="Site\Terminal\Controls\Players_Defaults.ascx" />
+    <Content Include="Site\Terminal\Controls\Players_List.ascx" />
+    <Content Include="Site\Terminal\Controls\Players_Settings.ascx" />
+    <Content Include="Site\Terminal\Groups.aspx" />
+    <Content Include="Site\Terminal\Players.aspx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DataAccessRegistration.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Infrastructure\ContentInfo.cs" />
+    <Compile Include="Infrastructure\Core\IMasterPage.cs" />
+    <Compile Include="Infrastructure\Core\IPageView.cs" />
+    <Compile Include="Infrastructure\Core\IUserControlView.cs" />
+    <Compile Include="Infrastructure\DateExtensions.cs" />
+    <Compile Include="Infrastructure\FileProvider.cs" />
+    <Compile Include="Infrastructure\HTML5Icon.cs" />
+    <Compile Include="Infrastructure\Icons.cs" />
+    <Compile Include="Infrastructure\IFileProvider.cs" />
+    <Compile Include="Infrastructure\ImageHelper.cs" />
+    <Compile Include="Infrastructure\JsonContent.cs" />
+    <Compile Include="Infrastructure\Model\RolesPrivilegeViewModel.cs" />
+    <Compile Include="Infrastructure\Services\PlayerService.cs" />
+    <Compile Include="Infrastructure\ShortGuid.cs" />
+    <Compile Include="Infrastructure\Utilities\GuidExtension.cs" />
+    <Compile Include="Infrastructure\Utilities\Strings.cs" />
+    <Compile Include="Infrastructure\Web\CustomMultipartFormDataStreamProvider.cs" />
+    <Compile Include="Infrastructure\PageSettings.cs" />
+    <Compile Include="Infrastructure\Security\SiteLogin.cs" />
+    <Compile Include="Infrastructure\Services\DataController.cs" />
+    <Compile Include="Infrastructure\Utilities\ControlPath.cs" />
+    <Compile Include="Infrastructure\Utilities\GridViewHelper.cs" />
+    <Compile Include="Infrastructure\Web\ValidateMimeMultipartContentFilter.cs" />
+    <Compile Include="Infrastructure\Web\Controls\Editable\EditableText.ascx.cs">
+      <DependentUpon>EditableText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Web\Controls\Editable\EditableText.ascx.designer.cs">
+      <DependentUpon>EditableText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Web\Controls\PivotGrid.cs" />
+    <Compile Include="Infrastructure\Web\HtmlParserService.cs" />
+    <Compile Include="Infrastructure\Web\WebSessionProvider.cs" />
+    <Compile Include="Infrastructure\Web\BasePage%28TPresenter,TView%29.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Core\GenericPresenter.cs" />
+    <Compile Include="Infrastructure\Core\IBasePage.cs" />
+    <Compile Include="Infrastructure\Core\ISessionProvider.cs" />
+    <Compile Include="Infrastructure\Core\IView.cs" />
+    <Compile Include="Infrastructure\Core\IWebControl.cs" />
+    <Compile Include="Infrastructure\Core\Presenter.cs" />
+    <Compile Include="Infrastructure\Security\Authorization.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Utilities\MD5SaltEncryption.cs" />
+    <Compile Include="Infrastructure\Web\MembershipProvider.cs" />
+    <Compile Include="Infrastructure\Web\SitemapProvider.cs" />
+    <Compile Include="Infrastructure\Utilities\DirConst.cs" />
+    <Compile Include="Infrastructure\Utilities\FileConst.cs" />
+    <Compile Include="Infrastructure\Utilities\PrivilegeDef.cs" />
+    <Compile Include="Infrastructure\Utilities\RoleHelper.cs" />
+    <Compile Include="Infrastructure\Utilities\NVCHelper.cs" />
+    <Compile Include="Infrastructure\Utilities\PageParameter.cs" />
+    <Compile Include="Infrastructure\Web\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Web\CallbackPanel.cs" />
+    <Compile Include="Infrastructure\Web\RenderFactory.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Web\Controls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Web\Controls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\NoBufferPolicySelector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\AccountsAddEditPresenter.cs">
+      <DependentUpon>Accounts_AddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\AccountsManageRolesPresenter.cs">
+      <DependentUpon>Accounts_ManageRoles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_AddEdit.ascx.cs">
+      <DependentUpon>Accounts_AddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_ManageRoles.ascx.cs">
+      <DependentUpon>Accounts_ManageRoles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\IAccountsAddEditView.cs">
+      <DependentUpon>Accounts_AddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\IAccountsManageRolesView.cs">
+      <DependentUpon>Accounts_ManageRoles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\ProfilePresenter.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\IHomeView.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\AccountsPrivilegesPresenter.cs">
+      <DependentUpon>Accounts_Privileges.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\AccountsRolesPresenter.cs">
+      <DependentUpon>Accounts_Roles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\AccountsUsersPresenter.cs">
+      <DependentUpon>Accounts_Users.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\IAccountsPrivilegesView.cs">
+      <DependentUpon>Accounts_Privileges.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\IAccountsRolesView.cs">
+      <DependentUpon>Accounts_Roles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\IAccountsUsersView.cs">
+      <DependentUpon>Accounts_Users.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Accounts.aspx.cs">
+      <DependentUpon>Accounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\%40controller\AdministrationController.cs" />
+    <Compile Include="Site\Administration\AccountsPresenter.cs">
+      <DependentUpon>Accounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_Privileges.ascx.cs">
+      <DependentUpon>Accounts_Privileges.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_Privileges.ascx.designer.cs">
+      <DependentUpon>Accounts_Privileges.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_Roles.ascx.cs">
+      <DependentUpon>Accounts_Roles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_Roles.ascx.designer.cs">
+      <DependentUpon>Accounts_Roles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_Users.ascx.cs">
+      <DependentUpon>Accounts_Users.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Administration\Controls\Accounts_Users.ascx.designer.cs">
+      <DependentUpon>Accounts_Users.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Base.Master.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\HomePresenter.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Base.Master.designer.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\%40controller\FileDownload.cs" />
+    <Compile Include="Site\Media\%40controller\FileResult.cs" />
+    <Compile Include="Site\Media\%40controller\MediaController.cs" />
+    <Compile Include="Site\Media\%40controller\StreamsFileController.cs" />
+    <Compile Include="Site\Media\%40controller\StreamFile.cs" />
+    <Compile Include="Site\Media\Campaigns.aspx.cs">
+      <DependentUpon>Campaigns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\CampaignsPresenter.cs">
+      <DependentUpon>Campaigns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\CampaignsEditorPresenter.cs">
+      <DependentUpon>Campaigns_Editor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\CampaignsLayoutSelectorPresenter.cs">
+      <DependentUpon>Campaigns_Layout_Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\CampaignsListPresenter.cs">
+      <DependentUpon>Campaigns_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\CampaignsMediaSelectorAltPresenter.cs">
+      <DependentUpon>Campaigns_Media_Selector_Alt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\CampaignsMediaSelectorPresenter.cs">
+      <DependentUpon>Campaigns_Media_Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Editor.ascx.cs">
+      <DependentUpon>Campaigns_Editor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Layout_Selector.ascx.cs">
+      <DependentUpon>Campaigns_Layout_Selector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Layout_Selector.ascx.designer.cs">
+      <DependentUpon>Campaigns_Layout_Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_List.ascx.cs">
+      <DependentUpon>Campaigns_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_List.ascx.designer.cs">
+      <DependentUpon>Campaigns_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Media_Selector.ascx.cs">
+      <DependentUpon>Campaigns_Media_Selector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Media_Selector.ascx.designer.cs">
+      <DependentUpon>Campaigns_Media_Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Media_Selector_Alt.ascx.cs">
+      <DependentUpon>Campaigns_Media_Selector_Alt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Campaigns_Media_Selector_Alt.ascx.designer.cs">
+      <DependentUpon>Campaigns_Media_Selector_Alt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ICampaignsEditorView.cs">
+      <DependentUpon>Campaigns_Editor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ICampaignsLayoutSelectorView.cs">
+      <DependentUpon>Campaigns_Layout_Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ICampaignsListView.cs">
+      <DependentUpon>Campaigns_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ICampaignsMediaSelectorAltView.cs">
+      <DependentUpon>Campaigns_Media_Selector_Alt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ICampaignsMediaSelectorView.cs">
+      <DependentUpon>Campaigns_Media_Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourceCCTVView.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Resource_CCTV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesHTML5View.cs">
+      <DependentUpon>Resources_HTML5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesHTMLAddEditView.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Resources_HTML_AddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesMediaGalleryView.cs">
+      <DependentUpon>Resources_Media_Gallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesFileUploadView.cs">
+      <DependentUpon>Resources_FileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesImageView.cs">
+      <DependentUpon>Resources_Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesMenuSearchView.cs">
+      <DependentUpon>Resources_Menu_Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesMusicView.cs">
+      <DependentUpon>Resources_Music.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesRSSView.cs">
+      <DependentUpon>Resources_RSS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesSearchGalleryView.cs">
+      <DependentUpon>Resources_Search_Gallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesStreamView.cs">
+      <DependentUpon>Resources_Stream.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesVideoView.cs">
+      <DependentUpon>Resources_Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourceTickerView.cs">
+      <DependentUpon>Resource_Ticker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourceCCTVPresenter.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Resource_CCTV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesHTML5Presenter.cs">
+      <DependentUpon>Resources_HTML5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesHTMLAddEditPresenter.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Resources_HTML_AddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesMediaGalleryPresenter.cs">
+      <DependentUpon>Resources_Media_Gallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesFileUploadPresenter.cs">
+      <DependentUpon>Resources_FileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesImagePresenter.cs">
+      <DependentUpon>Resources_Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesMenuPresenter.cs">
+      <DependentUpon>Resources_Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\IResourcesMenuView.cs">
+      <DependentUpon>Resources_Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesMenuSearchPresenter.cs">
+      <DependentUpon>Resources_Menu_Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesMusicPresenter.cs">
+      <DependentUpon>Resources_Music.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesRSSPresenter.cs">
+      <DependentUpon>Resources_RSS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesSearchGalleryPresenter.cs">
+      <DependentUpon>Resources_Search_Gallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesStreamPresenter.cs">
+      <DependentUpon>Resources_Stream.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourcesVideoPresenter.cs">
+      <DependentUpon>Resources_Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_FileUpload.ascx.cs">
+      <DependentUpon>Resources_FileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_FileUpload.ascx.designer.cs">
+      <DependentUpon>Resources_FileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_HTML5.ascx.cs">
+      <DependentUpon>Resources_HTML5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_HTML5.ascx.designer.cs">
+      <DependentUpon>Resources_HTML5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_HTML_AddEdit.ascx.cs">
+      <DependentUpon>Resources_HTML_AddEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_HTML_AddEdit.ascx.designer.cs">
+      <DependentUpon>Resources_HTML_AddEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Image.ascx.cs">
+      <DependentUpon>Resources_Image.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Image.ascx.designer.cs">
+      <DependentUpon>Resources_Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Media_Gallery.ascx.cs">
+      <DependentUpon>Resources_Media_Gallery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Media_Gallery.ascx.designer.cs">
+      <DependentUpon>Resources_Media_Gallery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Menu.ascx.cs">
+      <DependentUpon>Resources_Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Menu_Search.ascx.cs">
+      <DependentUpon>Resources_Menu_Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Music.ascx.cs">
+      <DependentUpon>Resources_Music.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Music.ascx.designer.cs">
+      <DependentUpon>Resources_Music.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_RSS.ascx.cs">
+      <DependentUpon>Resources_RSS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_RSS.ascx.designer.cs">
+      <DependentUpon>Resources_RSS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Search_Gallery.ascx.cs">
+      <DependentUpon>Resources_Search_Gallery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Stream.ascx.cs">
+      <DependentUpon>Resources_Stream.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Stream.ascx.designer.cs">
+      <DependentUpon>Resources_Stream.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Video.ascx.cs">
+      <DependentUpon>Resources_Video.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resources_Video.ascx.designer.cs">
+      <DependentUpon>Resources_Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\ResourceTickerPresenter.cs">
+      <DependentUpon>Resource_Ticker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resource_CCTV.ascx.cs">
+      <DependentUpon>Resource_CCTV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resource_CCTV.ascx.designer.cs">
+      <DependentUpon>Resource_CCTV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resource_Ticker.ascx.cs">
+      <DependentUpon>Resource_Ticker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\Controls\Resource_Ticker.ascx.designer.cs">
+      <DependentUpon>Resource_Ticker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\ICampaignsView.cs">
+      <DependentUpon>Campaigns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\IResourcesView.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Media\Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Media\ResourcesPresenter.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reporting\Activity_Logs.aspx.cs">
+      <DependentUpon>Activity_Logs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reporting\Activity_Logs.aspx.designer.cs">
+      <DependentUpon>Activity_Logs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\GroupManagePresenter.cs">
+      <DependentUpon>Group_Manage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\%40controllers\TerminalController.cs" />
+    <Compile Include="Site\Terminal\Controls\GroupsListPresenter.cs">
+      <DependentUpon>Groups_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\GroupsSchedulePresenter.cs">
+      <DependentUpon>Groups_Schedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Groups_List.ascx.cs">
+      <DependentUpon>Groups_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Groups_List.ascx.designer.cs">
+      <DependentUpon>Groups_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Groups_Schedule.ascx.cs">
+      <DependentUpon>Groups_Schedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Groups_Schedule.ascx.designer.cs">
+      <DependentUpon>Groups_Schedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Group_Manage.ascx.cs">
+      <DependentUpon>Group_Manage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IGroupManageView.cs">
+      <DependentUpon>Group_Manage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IGroupsListView.cs">
+      <DependentUpon>Groups_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IGroupsScheduleView.cs">
+      <DependentUpon>Groups_Schedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IPlayerEditView.cs">
+      <DependentUpon>PlayerEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IPlayersDefaultsView.cs">
+      <DependentUpon>Players_Defaults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IPlayersSettingsView.cs">
+      <DependentUpon>Players_Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\PlayerEdit.ascx.cs">
+      <DependentUpon>PlayerEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\PlayerEditPresenter.cs">
+      <DependentUpon>PlayerEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\PlayersDefaultsPresenter.cs">
+      <DependentUpon>Players_Defaults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\PlayersListPresenter.cs">
+      <DependentUpon>Players_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\PlayersSettingsPresenter.cs">
+      <DependentUpon>Players_Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Players_Defaults.ascx.cs">
+      <DependentUpon>Players_Defaults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Players_Defaults.ascx.designer.cs">
+      <DependentUpon>Players_Defaults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Players_List.ascx.cs">
+      <DependentUpon>Players_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Players_List.ascx.designer.cs">
+      <DependentUpon>Players_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Players_Settings.ascx.cs">
+      <DependentUpon>Players_Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\Players_Settings.ascx.designer.cs">
+      <DependentUpon>Players_Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Controls\IPlayersListView.cs">
+      <DependentUpon>Players_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\IPlayersView.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Players.aspx.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Terminal\PlayersPresenter.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\GroupsPresenter.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\IGroupsView.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Terminal\Groups.aspx.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site\Base.Master" />
+    <Content Include="packages.config" />
+    <Content Include="App_Themes\web.config" />
+    <Content Include="Scripts\web.config" />
+    <Content Include="Contents\lib\knockout\web.config" />
+    <Content Include="Infrastructure\Web\Controls\web.config" />
+    <Content Include="Contents\lib\ion.rangeSlider-1.9.3\ion.rangeSlider-1.9.3\PSD\sprite-skin.psd" />
+    <Content Include="_web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\DroidSansMono.eot" />
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\DroidSansMono.ttf" />
+    <Content Include="Contents\musicPlayer02\css\DroidSansMono\DroidSansMono.woff" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mb.audio.font.vfb" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mbaudio_font.eot" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mbaudio_font.ttf" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mbaudio_font.woff" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mb_audio_font.eot" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mb_audio_font.ttf" />
+    <Content Include="Contents\musicPlayer02\css\mbAudioFont\mb_audio_font.woff" />
+    <Content Include="Contents\musicPlayer03\fonts\Lato-Bold.ttf" />
+    <Content Include="Contents\musicPlayer03\fonts\Lato-Italic.ttf" />
+    <Content Include="Contents\musicPlayer03\fonts\Lato-Regular.ttf" />
+    <Content Include="Contents\videojs\video-js.less" />
+    <Content Include="Contents\videojs\font\vjs.eot" />
+    <Content Include="Contents\videojs\font\vjs.ttf" />
+    <Content Include="Contents\videojs\font\vjs.woff" />
+    <None Include="Properties\PublishProfiles\Publish01.pubxml" />
+    <None Include="_web.Debug.config">
+      <DependentUpon>_web.config</DependentUpon>
+    </None>
+    <None Include="_web.Release.config">
+      <DependentUpon>_web.config</DependentUpon>
+    </None>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contents\lib\bootstrap3-editable\css\" />
+    <Folder Include="Contents\lib\bootstrap3-editable\img\" />
+    <Folder Include="Infrastructure\DataServices\" />
+    <Folder Include="Site\Media\Controls\source\" />
+    <Folder Include="Site\Reporting\Controls\" />
+    <Folder Include="Site\Z_MyTest2015\" />
+    <Folder Include="WorkingFolder\Resources\Image\" />
+    <Folder Include="WorkingFolder\Resources\Music\" />
+    <Folder Include="WorkingFolder\Resources\Video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Data.Mapping\HIS.Data.Mapping.csproj">
+      <Project>{dbb14791-589c-40ad-9893-ecdd7199818e}</Project>
+      <Name>HIS.Data.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.DataAccess\HIS.DataAccess.csproj">
+      <Project>{89eb3d9f-6c5a-4dc8-9152-9b6db563d401}</Project>
+      <Name>HIS.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.Data\HIS.Data.csproj">
+      <Project>{e6d99925-44fe-462e-a1ad-df9b6e8af693}</Project>
+      <Name>HIS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.Player\HIS.Player.Data\HIS.Shared.csproj">
+      <Project>{0efe18df-8657-44ef-bde0-2631c5dd6c8c}</Project>
+      <Name>HIS.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4637</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4637/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
